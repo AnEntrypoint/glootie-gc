@@ -1,0 +1,7 @@
+node_modules/
+.gemini/
+*.log
+hook-test.txt
+canary.txt
+canary-legacy.txt
+trigger.log

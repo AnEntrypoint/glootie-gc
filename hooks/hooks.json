@@ -1,0 +1,29 @@
+{
+  "hooks": {
+    "BeforeTool": [
+      {
+        "name": "glootie-gc-before-tool",
+        "type": "command",
+        "matcher": "*",
+        "command": "node \"${extensionPath}/pre-tool-use-hook.js\"",
+        "timeout": 10000
+      }
+    ],
+    "SessionStart": [
+      {
+        "name": "glootie-gc-session-start",
+        "type": "command",
+        "command": "node \"${extensionPath}/prompt-submit-hook.js\"",
+        "timeout": 7200000
+      }
+    ],
+    "Stop": [
+      {
+        "name": "glootie-gc-stop",
+        "type": "command",
+        "command": "node \"${extensionPath}/stop-hook.js\"",
+        "timeout": 7200000
+      }
+    ]
+  }
+}

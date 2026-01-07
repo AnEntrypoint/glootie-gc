@@ -1,0 +1,21 @@
+{
+  "hooks": {
+    "BeforeTool": [
+      {
+        "name": "glootie-gc-before-tool",
+        "type": "command",
+        "matcher": "*",
+        "command": "node \"C:\\dev\\glootie-gc\\pre-tool-use-hook.js\"",
+        "timeout": 10000
+      }
+    ],
+    "SessionStart": [
+      {
+        "name": "glootie-gc-session-start",
+        "type": "command",
+        "command": "node \"C:\\dev\\glootie-gc\\prompt-submit-hook.js\"",
+        "timeout": 7200000
+      }
+    ]
+  }
+}

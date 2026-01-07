@@ -1,0 +1,35 @@
+{
+  "name": "glootie-gc",
+  "version": "2.0.9",
+  "description": "Advanced Gemini CLI extension with WFGY integration, MCP tools, and automated hooks",
+  "main": "gemini-extension.json",
+  "files": [
+    "gemini-extension.json",
+    "hooks/",
+    "agents/",
+    "pre-tool-use-hook.js",
+    "prompt-submit-hook.js",
+    "stop-hook.js",
+    "package.json"
+  ],
+  "keywords": [
+    "gemini-cli",
+    "gemini-extension",
+    "wfgy",
+    "mcp",
+    "automation",
+    "glootie"
+  ],
+  "author": "AnEntrypoint",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnEntrypoint/glootie-gc.git"
+  },
+  "dependencies": {
+    "@lydell/node-pty": "^1.1.0"
+  },
+  "optionalDependencies": {
+    "@lydell/node-pty-win32-x64": "^1.2.0-beta.2"
+  }
+}

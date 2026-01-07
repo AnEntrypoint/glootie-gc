@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.modelcontextprotocol.io/0.1.0/mcp.json",
+  "mcpServers": {
+    "glootie": {
+      "command": "npx",
+      "args": ["-y", "gxe@latest", "AnEntrypoint/mcp-glootie"]
+    },
+    "dev-server": {
+      "command": "npx",
+      "args": ["-y", "gxe@latest", "AnEntrypoint/dev-mcp"]
+    },
+    "code-search": {
+      "command": "npx",
+      "args": ["-y", "gxe@latest", "AnEntrypoint/code-search"]
+    }
+  }
+}
