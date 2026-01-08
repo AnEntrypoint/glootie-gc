@@ -15,13 +15,10 @@ const run = () => {
     const cleanToolName = tool_name.includes(':') ? tool_name.split(':').pop() : tool_name;
 
     if (cleanToolName === 'run_shell_command') {
-      const command = tool_input.command || '';
-      if (command.includes('npm run dev')) {
-        return {
-          decision: 'deny',
-          reason: 'Use the dev-server MCP tool instead: mcp__dev-server__start'
-        };
-      }
+      return {
+        decision: 'deny',
+        reason: 'The native run_shell_command is disabled. You MUST use mcp__glootie__execute for all shell commands, scripts, and code execution to ensure environment consistency.'
+      };
     }
 
     // Block native search tools in favor of MCP tools or direct execution
