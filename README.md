@@ -14,9 +14,9 @@ Or clone directly:
 git clone https://github.com/AnEntrypoint/glootie-gc ~/.gemini/extensions/glootie
 ```
 
-## Environment
+## Automatic Path Resolution
 
-Set GEMINI_PROJECT_DIR to your project directory in your shell profile.
+Hooks automatically use `${extensionPath}` for path resolution. No manual environment variable setup required. The extension is fully portable.
 
 ## Features
 
