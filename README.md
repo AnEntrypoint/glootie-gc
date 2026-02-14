@@ -2,16 +2,14 @@
 
 ## Installation
 
-Copy to your Gemini extensions directory:
-
-```bash
-cp -r . ~/.gemini/extensions/gm
-```
-
-Or clone directly:
-
+**Windows and Unix:**
 ```bash
 git clone https://github.com/AnEntrypoint/glootie-gc ~/.gemini/extensions/gm
+```
+
+**Windows PowerShell:**
+```powershell
+git clone https://github.com/AnEntrypoint/glootie-gc "\$env:APPDATA\gemini\extensions\gm"
 ```
 
 ## Automatic Path Resolution
